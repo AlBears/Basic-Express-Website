@@ -5,7 +5,7 @@ html
     // Bootstrap core CSS
     link(href='/stylesheets/bootstrap.css', rel='stylesheet')
   body
-    nav.navbar.navbar-inverse.navbar-fixed-top
+    nav.navbar.navbar-inverse
       .container
         .navbar-header
           button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
@@ -23,7 +23,8 @@ html
             li
               a(href='/contact') Contact
         // /.nav-collapse
-    block content
+    .container
+     block content
     hr
     footer
      p(class='text-center') © 2015 Company, Inc.
